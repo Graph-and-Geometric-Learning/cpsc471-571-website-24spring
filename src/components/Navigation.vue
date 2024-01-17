@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar color="primary">
+    <v-app-bar color="#4169e1">
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         <v-toolbar-title>CPSC 471/571: Trustworthy Deep Learning</v-toolbar-title>
     </v-app-bar>
