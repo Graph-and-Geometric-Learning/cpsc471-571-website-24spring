@@ -30,12 +30,8 @@ function time_number_to_string(time: number) {
 
 var recesses = [
     {
-        start: new Date("2023-10-17"),
-        end: new Date("2023-10-23")
-    },
-    {
-        start: new Date("2023-11-17"),
-        end: new Date("2023-11-27")
+        start: new Date("2024-03-08"),
+        end: new Date("2024-03-25")
     },
 ]
 
@@ -53,10 +49,6 @@ function getRecurringEventsStartEnd(start: string, end: string, day: number, nam
                 in_recess = true
                 break
             }
-        }
-
-        if (date == "2023-11-20") {
-            in_recess = true
         }
 
         var contents: string[] = []
@@ -80,40 +72,29 @@ function getRecurringEventsStartEnd(start: string, end: string, day: number, nam
 }
 
 function getRecurringEvents(day: number, name: string, loc: string, zoom_link: string, start_time: number, end_time: number) {
-    return getRecurringEventsStartEnd("2023-08-30", "2023-12-08", day, name, loc, zoom_link, start_time, end_time)
+    return getRecurringEventsStartEnd("2024-01-17", "2024-04-28", day, name, loc, zoom_link, start_time, end_time)
 }
 
 function getRexEvents() {
-    return getRecurringEvents(1, "Rex Ying", "17 Hillhouse, Room 332", "", 15, 16)
+    return getRecurringEvents(1, "Rex Ying", "17 Hillhouse, Room 332", "", 13, 14)
 }
 
-function getJialinEvents() {
-    return getRecurringEvents(5, "Jialin Chen", "Dunham 431", "", 14, 15)
+function getNgocEvents() {
+    return getRecurringEvents(2, "Ngoc Bui", "Dunham 431", "", 14, 15)
 }
 
-function getYuhangEvents() {
-    return getRecurringEvents(2, "Yuhang Chen", "Marx Library C49", "", 10, 11)
-}
+// function getJoshEvents() {
+//     return getRecurringEvents(2, "Josh Beal", "TBD", "", 10, 11)
+// }
 
-function getAgastyaEvents() {
-    return getRecurringEvents(3, "Agastya Rana", "", "https://yale.zoom.us/j/91070275564", 20, 21)
-}
+// function getDerekEvents() {
+//     return getRecurringEvents(2, "Derek Dong", "TBD", "", 10, 11)
+// }
 
-function getMahdiEvents() {
-    return getRecurringEvents(4, "Mahdi Soleimani", "AKW 209", "https://yale.zoom.us/my/matt.so", 13.5, 14.5)
-}
-
-function getMeiliEvents() {
-    return getRecurringEvents(5, "Meili Gupta", "WLH 015", "https://yale.zoom.us/j/9734866003", 10, 11)
-}
 
 function getEvents() {
     return getRexEvents()
-            .concat(getYuhangEvents())
-            .concat(getAgastyaEvents())
-            .concat(getMahdiEvents())
-            .concat(getMeiliEvents())
-            .concat(getJialinEvents())
+            .concat(getNgocEvents())
 }
 
 
