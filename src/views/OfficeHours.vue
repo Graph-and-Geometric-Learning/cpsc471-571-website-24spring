@@ -76,7 +76,7 @@ function getRecurringEvents(day: number, name: string, loc: string, zoom_link: s
 }
 
 function getRexEvents() {
-    return getRecurringEvents(1, "Rex Ying", "17 Hillhouse, Room 332", "", 13, 14)
+    return getRecurringEvents(1, "Rex Ying", "17 Hillhouse, Room 332", "", 13.5, 14.5)
 }
 
 function getNgocEvents() {

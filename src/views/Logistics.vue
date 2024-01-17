@@ -78,18 +78,18 @@
             <v-col>
                 <v-sheet class="pa-8" elevation="6">
                     <h1>Communication</h1>
-                    <!-- <h2>Ed Discussion</h2> -->
-                    <!-- <ul> -->
-                    <!--     <li>Sign up <a href="https://edstem.org/us/courses/44408/discussion/">Ed Discussion</a> with your @yale.edu email.</li> -->
-                    <!--     <li>Please participate and help each other, but -->
-                    <!--         <ul> -->
-                    <!--             <li>Annotate your questions</li> -->
-                    <!--             <li>Search for answers before you ask</li> -->
-                    <!--             <li>Don't post code</li> -->
-                    <!--         </ul> -->
-                    <!--     </li> -->
-                    <!--     <li><b>We do not encourage private posts on Ed Discussion</b> as they reduce the efficience with which we serve all students.</li> -->
-                    <!-- </ul> -->
+                    <h2>Ed Discussion</h2>
+                    <ul>
+                        <li>Sign up <a href="https://edstem.org/us/courses/54076/discussion/">Ed Discussion</a> with your @yale.edu email.</li>
+                        <li>Please participate and help each other, but
+                            <ul>
+                                <li>Annotate your questions</li>
+                                <li>Search for answers before you ask</li>
+                                <li>Don't post code</li>
+                            </ul>
+                        </li>
+                        <li><b>We do not encourage private posts on Ed Discussion</b> as they reduce the efficience with which we serve all students.</li>
+                    </ul>
                     <h2>Mailing List</h2>
                     <ul>
                         <li>Teaching staff: <a
