@@ -86,7 +86,7 @@ export default defineComponent({
         name: "Derek Dong",
         image_src: new URL("../assets/photos/no_avt.png", import.meta.url)
           .href,
-        role: "Grader",
+        role: "Undergraduate Learning Assistant",
       },
     ],
   }),
