@@ -39,6 +39,14 @@ npm run build
 pnpm build
 ```
 
+To deploy to `gh-pages`
+```
+1. `yarn build` 
+2. Commit to the main branch as normal.
+3. Run the following command to update the `dist` folder to `gh-pages` branch.
+`git subtree push --prefix dist origin gh-pages`
+```
+
 ### Lints and fixes files
 
 ```

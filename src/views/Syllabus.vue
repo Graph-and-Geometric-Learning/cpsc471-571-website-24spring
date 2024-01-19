@@ -77,6 +77,12 @@ var items: Item[] = [
     slide: import.meta.env.BASE_URL + "01-intro.pdf",
   },
   {
+    week: 2,
+    date: "Fri, Jan 19",
+    lecture: "Introduction to Trustworthy AI (cont.)",
+    slide: import.meta.env.BASE_URL + "01-intro.pdf",
+  },
+  {
     week: 3, 
     date: "Fri, Feb 02rd",
     lecture: "No class",
