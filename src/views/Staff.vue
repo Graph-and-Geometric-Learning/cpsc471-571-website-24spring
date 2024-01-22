@@ -72,19 +72,19 @@ export default defineComponent({
       // },
       {
         name: "Josh Beal",
-        image_src: new URL("../assets/photos/josh_beal.png", import.meta.url)
+        image_src: new URL("../assets/photos/josh_beal.jpg", import.meta.url)
           .href,
         role: "Teaching Assistant",
       },
       {
         name: "Derek Dong",
-        image_src: new URL("../assets/photos/derek_dong.png", import.meta.url)
+        image_src: new URL("../assets/photos/derek_dong.jpg", import.meta.url)
           .href,
         role: "Undergraduate Learning Assistant",
       },
       {
         name: "Ngoc Bui",
-        image_src: new URL("../assets/photos/ngoc_bui.png", import.meta.url)
+        image_src: new URL("../assets/photos/ngoc_bui.jpg", import.meta.url)
           .href,
         role: "Grader",
       },
