@@ -83,18 +83,19 @@ function getNgocEvents() {
     return getRecurringEvents(2, "Ngoc Bui", "Dunham 431", "", 14, 15)
 }
 
-// function getJoshEvents() {
-//     return getRecurringEvents(2, "Josh Beal", "TBD", "", 10, 11)
-// }
+function getJoshEvents() {
+    return getRecurringEvents(3, "Josh Beal", "AKW 009", "", 13, 14)
+}
 
-// function getDerekEvents() {
-//     return getRecurringEvents(2, "Derek Dong", "TBD", "", 10, 11)
-// }
+function getDerekEvents() {
+    return getRecurringEvents(5, "Derek Dong", "TBD", "", 13, 14)
+}
 
 
 function getEvents() {
     return getRexEvents()
-            .concat(getNgocEvents())
+            .concat(getJoshEvents())
+            .concat(getDerekEvents())
 }
 
 

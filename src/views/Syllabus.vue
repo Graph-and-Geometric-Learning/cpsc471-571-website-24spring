@@ -21,6 +21,7 @@
               <td>
                 <p v-if="item.lecture == 'No class'"><p style="color:grey;">{{ item.lecture }}</p></p>
                 <p v-else>{{ item.lecture }}</p>
+                <p v-if="item.event"><p style="color: green; font-size:11pt;">{{ item.event }}</p></p>
               </td>
               <td><a v-if="item.slide" :href="item.slide">[slide]</a></td>
               <td>{{ item.reading }}</td>
@@ -35,9 +36,7 @@
                     released
                   </div>
                 </div>
-                <div v-else>
-                  {{ item.event }}
-                </div>
+
               </td>
               <td><p style="color:red;">{{ item.deadline }}</p></td>
             </tr>
@@ -77,10 +76,24 @@ var items: Item[] = [
     slide: import.meta.env.BASE_URL + "01-intro.pdf",
   },
   {
-    week: 2,
+    week: 1,
     date: "Fri, Jan 19",
     lecture: "Introduction to Trustworthy AI (cont.)",
     slide: import.meta.env.BASE_URL + "01-intro.pdf",
+  },
+  {
+    week: 2,
+    date: "Mon, Jan 22",
+    lecture: "Deep Learning Basics, CNNs, and RNNs",
+    slide: import.meta.env.BASE_URL + "02-basics.pdf",
+  },
+  {
+    week: 2,
+    date: "Wed, Jan 24",
+    lecture: "No class",
+    // slide: import.meta.env.BASE_URL + "02-basics.pdf",
+    reading: "Trustworthy Machine Learning Book – Chapter 1.1 Defining Trust",
+    event: "The reading assignment will be in place of Wed's class"
   },
   {
     week: 3, 
