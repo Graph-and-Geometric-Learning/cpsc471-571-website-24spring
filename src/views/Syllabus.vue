@@ -86,6 +86,8 @@ var items: Item[] = [
     date: "Mon, Jan 22",
     lecture: "Deep Learning Basics, CNNs, and RNNs",
     slide: import.meta.env.BASE_URL + "02-basics.pdf",
+    hw: import.meta.env.BASE_URL + "hw1.zip",
+    new_api: true,
   },
   {
     week: 2,
@@ -105,6 +107,12 @@ var items: Item[] = [
     week: 5, 
     date: "Fri, Feb 14th",
     lecture: "In-class project discussions",
+  },
+  {
+    week: 6, 
+    date: "Wed, Feb 21st",
+    lecture: "",
+    deadline: "[Due] Written homework 1",
   },
   {
     week: 7, 
