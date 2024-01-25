@@ -94,7 +94,7 @@ var items: Item[] = [
     date: "Wed, Jan 24",
     lecture: "No class",
     // slide: import.meta.env.BASE_URL + "02-basics.pdf",
-    reading: "Trustworthy Machine Learning Book – Chapter 1.1 Defining Trust",
+    reading: "Trustworthy Machine Learning Book – Chapter 1.1 Defining Trust - http://www.trustworthymachinelearning.com/",
     event: "The reading assignment will be in place of Wed's class"
   },
   {
