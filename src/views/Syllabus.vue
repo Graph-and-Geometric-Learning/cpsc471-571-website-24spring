@@ -98,11 +98,17 @@ var items: Item[] = [
     event: "The reading assignment will be in place of Wed's class"
   },
   {
-    week: 3, 
-    date: "Fri, Feb 02rd",
-    lecture: "No class",
-    deadline: "[Due] Finalize project groups",
+    week: 3,
+    date: "Mon, Jan 29",
+    lecture: "Transformers",
+    slide: import.meta.env.BASE_URL + "03-transformers.pdf",
   },
+  // {
+  //   week: 3, 
+  //   date: "Fri, Feb 02rd",
+  //   lecture: "No class",
+  //   deadline: "[Due] Finalize project groups",
+  // },
   {
     week: 5, 
     date: "Fri, Feb 14th",

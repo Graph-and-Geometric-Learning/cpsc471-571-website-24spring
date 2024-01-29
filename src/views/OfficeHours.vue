@@ -88,7 +88,7 @@ function getJoshEvents() {
 }
 
 function getDerekEvents() {
-    return getRecurringEvents(5, "Derek Dong", "TBD", "", 13, 14)
+    return getRecurringEvents(5, "Derek Dong", "WLH 113", "", 13, 14)
 }
 
 
