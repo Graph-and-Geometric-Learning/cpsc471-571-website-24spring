@@ -103,15 +103,16 @@ var items: Item[] = [
     lecture: "Transformers",
     slide: import.meta.env.BASE_URL + "03-transformers.pdf",
   },
-  // {
-  //   week: 3, 
-  //   date: "Fri, Feb 02rd",
-  //   lecture: "No class",
-  //   deadline: "[Due] Finalize project groups",
-  // },
+  {
+    week: 3, 
+    date: "Web, Jan 31",
+    lecture: "Explainability of Neural Networks (XAI)",
+    slide: import.meta.env.BASE_URL + "04-explainability.pdf",
+    // deadline: "[Due] Finalize project groups",
+  },
   {
     week: 5, 
-    date: "Fri, Feb 14th",
+    date: "Wed, Feb 14th",
     lecture: "In-class project discussions",
   },
   {
