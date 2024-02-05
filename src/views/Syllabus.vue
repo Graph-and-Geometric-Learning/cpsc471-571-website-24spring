@@ -102,12 +102,21 @@ var items: Item[] = [
     date: "Mon, Jan 29",
     lecture: "Transformers",
     slide: import.meta.env.BASE_URL + "03-transformers.pdf",
+    colab: import.meta.env.BASE_URL + "colab1.zip",
+    new_api: true,
   },
   {
     week: 3, 
     date: "Web, Jan 31",
     lecture: "Explainability of Neural Networks (XAI)",
     slide: import.meta.env.BASE_URL + "04-explainability.pdf",
+    // deadline: "[Due] Finalize project groups",
+  },
+  {
+    week: 4, 
+    date: "Mon, Feb 5",
+    lecture: "Explainability of Neural Networks (XAI) (cont.)",
+    slide: import.meta.env.BASE_URL + "05-explainability-cont.pdf",
     // deadline: "[Due] Finalize project groups",
   },
   {
@@ -119,7 +128,7 @@ var items: Item[] = [
     week: 6, 
     date: "Wed, Feb 21st",
     lecture: "",
-    deadline: "[Due] Written homework 1",
+    deadline: "[Due] Written/Programming homework 1",
   },
   {
     week: 7, 
