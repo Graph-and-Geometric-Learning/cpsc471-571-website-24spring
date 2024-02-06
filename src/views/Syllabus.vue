@@ -23,7 +23,7 @@
                 <p v-else>{{ item.lecture }}</p>
                 <p v-if="item.event"><p style="color: green; font-size:11pt;">{{ item.event }}</p></p>
               </td>
-              <td><a v-if="item.slide" :href="item.slide">[slide]</a></td>
+              <td><a v-if="item.slide" :href="item.slide">[slide]</a><a v-if="item.record" :href="item.record">[record]</a></td>
               <td>{{ item.reading }}</td>
               <td>
                 <div v-if="item.new_api">
@@ -55,6 +55,7 @@ interface Item {
   date: string;
   lecture: string;
   slide?: string;
+  record?: string;
   reading?: string;
   event?: string;
   deadline?: string;
@@ -102,6 +103,7 @@ var items: Item[] = [
     date: "Mon, Jan 29",
     lecture: "Transformers",
     slide: import.meta.env.BASE_URL + "03-transformers.pdf",
+    record: "https://yale.zoom.us/rec/share/YSmMakqHoY9yU0kdq1yuXjHaWyGYTpMDakk6j3zJvpQm-5bkkvj65n0B-4KgwkrA.1luDA1L7fxikpzdi?startTime=1706556830000",
     colab: import.meta.env.BASE_URL + "colab1.zip",
     new_api: true,
   },
@@ -110,6 +112,7 @@ var items: Item[] = [
     date: "Web, Jan 31",
     lecture: "Explainability of Neural Networks (XAI)",
     slide: import.meta.env.BASE_URL + "04-explainability.pdf",
+    record: "https://yale.zoom.us/rec/share/KNJmIlL31cnnnR_5fBco7DTAakXpX2EtADO5_0xQqcEAno0DS6_q08HbD2JW2M4v.SDKVhzsqh_MwYUGy?startTime=1706729674000",
     // deadline: "[Due] Finalize project groups",
   },
   {
