@@ -120,37 +120,53 @@ var items: Item[] = [
     // deadline: "[Due] Finalize project groups",
   },
   {
-    week: 5, 
-    date: "Wed, Feb 14th",
+    week: 6, 
+    date: "Mon, Feb 19",
     lecture: "In-class project discussions",
   },
   {
     week: 6, 
-    date: "Wed, Feb 21st",
+    date: "Wed, Feb 21",
     lecture: "",
     deadline: "[Due] Written/Programming homework 1",
   },
   {
     week: 7, 
-    date: "Fri, March 1st",
+    date: "Fri, March 1",
     deadline: "[Due] Project proposal",
     lecture: "No class",
   },
   {
     week: 8, 
-    date: "Wed, March 6th",
+    date: "Mon, March 4",
     lecture: "In-class work session",
   },
   {
+    week: 8, 
+    date: "Web, March 6",
+    lecture: "Guest lecture (Zoom)",
+  },
+  {
+    week: 11, 
+    date: "Mon, March 25",
+    lecture: "Guest lecture (Zoom)",
+  },
+  {
     week: 12, 
-    date: "Fri, April 5th",
+    date: "Fri, April 5",
     deadline: "[Due] Project milestone",
     lecture: "No class",
   },
   {
     week: 15, 
-    date: "Wed, April 24th",
+    date: "Wed, April 24",
     lecture: "Exam",
+  },
+  {
+    week: 16, 
+    date: "Fri, May 5",
+    lecture: "No class",
+    deadline: "[Due] Final project report",
   },
 ];
 
