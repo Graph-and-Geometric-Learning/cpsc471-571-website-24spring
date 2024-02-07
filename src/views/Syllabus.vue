@@ -123,6 +123,13 @@ var items: Item[] = [
     // deadline: "[Due] Finalize project groups",
   },
   {
+    week: 4, 
+    date: "Wed, Feb 7",
+    lecture: "Explainability Evaluation and Global Explanability",
+    slide: import.meta.env.BASE_URL + "05-explainability_eval.pdf",
+    // deadline: "[Due] Finalize project groups",
+  },
+  {
     week: 6, 
     date: "Mon, Feb 19",
     lecture: "In-class project discussions",

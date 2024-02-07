@@ -84,7 +84,7 @@ function getNgocEvents() {
 }
 
 function getJoshEvents() {
-    return getRecurringEvents(3, "Josh Beal", "AKW 009", "", 13, 14)
+    return getRecurringEvents(3, "Josh Beal", "AKW 512", "", 13, 14)
 }
 
 function getDerekEvents() {
