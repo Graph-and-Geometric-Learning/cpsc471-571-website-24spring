@@ -119,7 +119,7 @@ var items: Item[] = [
     week: 4, 
     date: "Mon, Feb 5",
     lecture: "Explainability of Neural Networks (XAI) (cont.)",
-    slide: import.meta.env.BASE_URL + "05-explainability-cont.pdf",
+    slide: import.meta.env.BASE_URL + "05-surrogates.pdf",
     // deadline: "[Due] Finalize project groups",
   },
   {
@@ -127,6 +127,7 @@ var items: Item[] = [
     date: "Wed, Feb 7",
     lecture: "Explainability Evaluation and Global Explanability",
     slide: import.meta.env.BASE_URL + "06-explainability_eval.pdf",
+    record: "https://yale.zoom.us/rec/share/c81nDhP_jssGtcxt2QLiRrg6xJTZ6hl8T-dgUbF7wwSq_gioeBB1K3GmCk4YoZr7.bVFwL5VAgsrzu4Fp?startTime=1707334489000"
     // deadline: "[Due] Finalize project groups",
   },
   {
