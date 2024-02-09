@@ -5,7 +5,7 @@
                 <v-sheet class="pa-8" elevation="6">
                     <h1>Welcom to CPSC 471/571!</h1>
                     <ul>
-                        <li>The classes meets on Monday/Wednesday 2:30PM - 3:45PM EDT.
+                        <li>The classes meets on Monday/Wednesday 2:30PM - 3:45PM EDT, 17 Hillhouse, Room 5.
                           <ul>
                             <li>Most of the lecture will be in-person.</li>
                             <li>There will be a few guest lectures, some of which might be held remotely.</li>
