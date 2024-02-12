@@ -131,9 +131,26 @@ var items: Item[] = [
     // deadline: "[Due] Finalize project groups",
   },
   {
+    week: 5, 
+    date: "Mon, Feb 12",
+    lecture: "Explainability Evaluation and Global Explanability (cont.)",
+    slide: import.meta.env.BASE_URL + "06-explainability_eval.pdf",
+    // record: "https://yale.zoom.us/rec/share/c81nDhP_jssGtcxt2QLiRrg6xJTZ6hl8T-dgUbF7wwSq_gioeBB1K3GmCk4YoZr7.bVFwL5VAgsrzu4Fp?startTime=1707334489000"
+    // deadline: "[Due] Finalize project groups",
+  },
+  {
+    week: 5, 
+    date: "Wed, Feb 12",
+    lecture: "Adversarial Machine Learning",
+    // slide: import.meta.env.BASE_URL + "06-explainability_eval.pdf",
+    // record: "https://yale.zoom.us/rec/share/c81nDhP_jssGtcxt2QLiRrg6xJTZ6hl8T-dgUbF7wwSq_gioeBB1K3GmCk4YoZr7.bVFwL5VAgsrzu4Fp?startTime=1707334489000"
+    // deadline: "[Due] Finalize project groups",
+  },
+  {
     week: 6, 
     date: "Mon, Feb 19",
     lecture: "In-class project discussions",
+    slide: import.meta.env.BASE_URL + "in-class-brainstorming.pdf",
   },
   {
     week: 6, 
