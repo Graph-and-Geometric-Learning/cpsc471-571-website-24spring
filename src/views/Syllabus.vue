@@ -140,9 +140,9 @@ var items: Item[] = [
   },
   {
     week: 5, 
-    date: "Wed, Feb 12",
-    lecture: "Adversarial Machine Learning",
-    // slide: import.meta.env.BASE_URL + "06-explainability_eval.pdf",
+    date: "Wed, Feb 14",
+    lecture: "Adversarial Attacks and Defenses",
+    slide: import.meta.env.BASE_URL + "07-adversarial_evasion.pdf",
     // record: "https://yale.zoom.us/rec/share/c81nDhP_jssGtcxt2QLiRrg6xJTZ6hl8T-dgUbF7wwSq_gioeBB1K3GmCk4YoZr7.bVFwL5VAgsrzu4Fp?startTime=1707334489000"
     // deadline: "[Due] Finalize project groups",
   },
