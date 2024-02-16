@@ -143,7 +143,7 @@ var items: Item[] = [
     date: "Wed, Feb 14",
     lecture: "Adversarial Attacks and Defenses",
     slide: import.meta.env.BASE_URL + "07-adversarial_evasion.pdf",
-    // record: "https://yale.zoom.us/rec/share/c81nDhP_jssGtcxt2QLiRrg6xJTZ6hl8T-dgUbF7wwSq_gioeBB1K3GmCk4YoZr7.bVFwL5VAgsrzu4Fp?startTime=1707334489000"
+    record: "https://yale.zoom.us/rec/share/d5z_5030Ol3BdqNzZEt_Xf61yZ4Daq_ls4BJ6kJGELlNJe7wffNcZDTMpBSw5_QN.aHtxKILdYPR0lqyS"
     // deadline: "[Due] Finalize project groups",
   },
   {
