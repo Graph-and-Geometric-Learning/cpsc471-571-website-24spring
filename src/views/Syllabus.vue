@@ -155,6 +155,14 @@ var items: Item[] = [
   {
     week: 6, 
     date: "Wed, Feb 21",
+    lecture: "Adversarial Attacks and Defenses (cont.)",
+    slide: import.meta.env.BASE_URL + "08-defense_poison.pdf",
+    // record: "https://yale.zoom.us/rec/share/d5z_5030Ol3BdqNzZEt_Xf61yZ4Daq_ls4BJ6kJGELlNJe7wffNcZDTMpBSw5_QN.aHtxKILdYPR0lqyS"
+    // deadline: "[Due] Finalize project groups",
+  },
+  {
+    week: 6, 
+    date: "Wed, Feb 21",
     lecture: "",
     deadline: "[Due] Written/Programming homework 1",
   },
