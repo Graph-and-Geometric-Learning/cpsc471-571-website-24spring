@@ -157,7 +157,6 @@ var items: Item[] = [
     date: "Wed, Feb 21",
     lecture: "Adversarial Attacks and Defenses (cont.)",
     slide: import.meta.env.BASE_URL + "08-defense_poison.pdf",
-    // record: "https://yale.zoom.us/rec/share/d5z_5030Ol3BdqNzZEt_Xf61yZ4Daq_ls4BJ6kJGELlNJe7wffNcZDTMpBSw5_QN.aHtxKILdYPR0lqyS"
     deadline: "[Due] Written homework 1",
   },
   {
@@ -165,6 +164,7 @@ var items: Item[] = [
     date: "Mon, Feb 26",
     lecture: "Adversarial Attacks and Defenses (cont.)",
     slide: import.meta.env.BASE_URL + "08-defense_poison.pdf",
+    record: "https://yale.zoom.us/rec/share/46z4jI-sRHhCJ_EnuR3Y0zhREaKS-P0gKbUMSqH6fTUF-PEdatdO5fckyPziLm90.hDrvebMpdESsxzMv",
     deadline: "[Due] Programming homework 1",
   },
   {
