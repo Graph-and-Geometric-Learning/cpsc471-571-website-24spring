@@ -164,7 +164,21 @@ var items: Item[] = [
     week: 7, 
     date: "Mon, Feb 26",
     lecture: "Adversarial Attacks and Defenses (cont.)",
+    slide: import.meta.env.BASE_URL + "08-defense_poison.pdf",
     deadline: "[Due] Programming homework 1",
+  },
+  {
+    week: 7, 
+    date: "Mon, Feb 26",
+    lecture: "Adversarial Attacks and Defenses (cont.)",
+    slide: import.meta.env.BASE_URL + "08-defense_poison.pdf",
+    deadline: "[Due] Programming homework 1",
+  },
+  {
+    week: 7, 
+    date: "Wed, Feb 28",
+    lecture: "Verification and Robust Reinforecement Learning",
+    slide: import.meta.env.BASE_URL + "09-verification.pdf",
   },
   {
     week: 7, 
