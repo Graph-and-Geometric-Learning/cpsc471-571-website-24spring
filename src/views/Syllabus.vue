@@ -179,6 +179,8 @@ var items: Item[] = [
     date: "Wed, Feb 28",
     lecture: "Verification and Robust Reinforecement Learning",
     slide: import.meta.env.BASE_URL + "09-verification.pdf",
+    colab: import.meta.env.BASE_URL + "colab2.zip",
+    new_api: true,
   },
   {
     week: 7, 
@@ -190,22 +192,37 @@ var items: Item[] = [
     week: 8, 
     date: "Mon, March 4",
     lecture: "In-class work session",
+    slide: import.meta.env.BASE_URL + "in-class-programming.pdf",
   },
   {
     week: 8, 
     date: "Web, March 6",
     lecture: "Guest lecture (Zoom)",
+    hw: import.meta.env.BASE_URL + "hw2.zip",
+    new_api: true,
   },
   {
     week: 11, 
     date: "Mon, March 25",
-    lecture: "Guest lecture (Zoom)",
+    lecture: "Deep Learning Privacy",
+  },
+  {
+    week: 12, 
+    date: "Wed, April 3",
+    deadline: "[Due] Programming Homework 2",
+    lecture: "",
   },
   {
     week: 12, 
     date: "Fri, April 5",
     deadline: "[Due] Project milestone",
     lecture: "No class",
+  },
+  {
+    week: 13, 
+    date: "Wed, April 10",
+    deadline: "[Due] Written Homework 2",
+    lecture: "",
   },
   {
     week: 15, 
