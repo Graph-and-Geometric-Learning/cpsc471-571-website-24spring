@@ -208,6 +208,12 @@ var items: Item[] = [
     slide: import.meta.env.BASE_URL + "10-privacy.pdf",
   },
   {
+    week: 11, 
+    date: "Mon, March 27",
+    lecture: "Differential Privacy (cont.)",
+    slide: import.meta.env.BASE_URL + "10-privacy.pdf",
+  },
+  {
     week: 12, 
     date: "Wed, April 3",
     deadline: "[Due] Programming Homework 2",
