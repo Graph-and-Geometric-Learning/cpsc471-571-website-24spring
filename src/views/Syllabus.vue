@@ -209,9 +209,15 @@ var items: Item[] = [
   },
   {
     week: 11, 
-    date: "Mon, March 27",
+    date: "Wed, March 27",
     lecture: "Differential Privacy (cont.)",
     slide: import.meta.env.BASE_URL + "10-privacy.pdf",
+  },
+  {
+    week: 12, 
+    date: "Mon, April 1",
+    lecture: "(Guest Lecture) Differential Privacy",
+    slide: import.meta.env.BASE_URL + "11-gautam_DP.pdf",
   },
   {
     week: 12, 
