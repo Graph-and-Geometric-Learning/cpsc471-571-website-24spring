@@ -224,8 +224,9 @@ var items: Item[] = [
     date: "Wed, April 3",
     lecture: "Machine Unlearning",
     record: "https://yale.zoom.us/rec/share/8uVvj8vuaGAg7LCB46-lEABN6wvux7mbj-XlLW04YKyjcRe-WKoJMc3F5F5vGH4C.1KVF0ilZ0_b-um3k",
-    slide: import.meta.env.BASE_URL + "12-unlearning.pdf",
+    slide: import.meta.env.BASE_URL + "12-Unlearning.pdf",
     deadline: "[Due] Programming Homework 2",
+    new_api: true,
   },
   {
     week: 13,
