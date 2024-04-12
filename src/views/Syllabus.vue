@@ -238,7 +238,9 @@ var items: Item[] = [
     week: 13,
     date: "Wed, April 10",
     deadline: "[Due] Written Homework 2",
-    lecture: "",
+    record: "https://yale.zoom.us/rec/share/DtaHGPysK74sMsEGpXc5Wyyq3kO8f-mErA6Pv9aUV3Hg41zuPDY01NzaSYowVsi7.3EDunwlmIaBvp9Kr",
+    lecture: "Quantization",
+    slide: import.meta.env.BASE_URL + "14-quantization.pdf",
   },
   {
     week: 15,
