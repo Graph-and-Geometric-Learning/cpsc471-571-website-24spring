@@ -243,6 +243,15 @@ var items: Item[] = [
     slide: import.meta.env.BASE_URL + "14-quantization.pdf",
   },
   {
+    week: 14,
+    date: "Mon, April 15",
+    record: "https://yale.zoom.us/rec/share/QqLRmAJtCLU2I96hvPf8eaOGl0pWBVwcLfK2Z5954iKKrbmHYvxpAR8EGF-Ms5vF.Pk-trU5TZda3lRdG",
+    lecture: "Algorithmic Fairness in ML",
+    slide: import.meta.env.BASE_URL + "15-fairness-part1.pdf",
+    hw: import.meta.env.BASE_URL + "example_final.zip",
+    new_api: true,
+  },
+  {
     week: 15,
     date: "Wed, April 24",
     lecture: "Exam",
