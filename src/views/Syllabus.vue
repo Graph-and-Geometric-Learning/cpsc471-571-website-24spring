@@ -247,9 +247,16 @@ var items: Item[] = [
     date: "Mon, April 15",
     record: "https://yale.zoom.us/rec/share/QqLRmAJtCLU2I96hvPf8eaOGl0pWBVwcLfK2Z5954iKKrbmHYvxpAR8EGF-Ms5vF.Pk-trU5TZda3lRdG",
     lecture: "Algorithmic Fairness in ML",
-    slide: import.meta.env.BASE_URL + "15-fairness-part1.pdf",
+    slide: import.meta.env.BASE_URL + "15-fairness.pdf",
     hw: import.meta.env.BASE_URL + "example_final.zip",
     new_api: true,
+  },
+  {
+    week: 15,
+    date: "Wed, April 17",
+    record: "https://yale.zoom.us/rec/share/QqLRmAJtCLU2I96hvPf8eaOGl0pWBVwcLfK2Z5954iKKrbmHYvxpAR8EGF-Ms5vF.Pk-trU5TZda3lRdG",
+    lecture: "Algorithmic Fairness in ML",
+    slide: import.meta.env.BASE_URL + "15-fairness.pdf",
   },
   {
     week: 15,
