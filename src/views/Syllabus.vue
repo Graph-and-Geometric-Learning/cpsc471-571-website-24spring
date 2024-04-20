@@ -254,7 +254,7 @@ var items: Item[] = [
   {
     week: 15,
     date: "Wed, April 17",
-    record: "https://yale.zoom.us/rec/share/QqLRmAJtCLU2I96hvPf8eaOGl0pWBVwcLfK2Z5954iKKrbmHYvxpAR8EGF-Ms5vF.Pk-trU5TZda3lRdG",
+    record: "https://yale.zoom.us/rec/share/5jGH7qG_vT90Mr7pTLbXR8mQkDjCbF9JOfEadCW-qsZJc9SYnSCxMNAKzv2TdDX0.BhWXC3cQzoatZb6T",
     lecture: "Algorithmic Fairness in ML",
     slide: import.meta.env.BASE_URL + "15-fairness.pdf",
   },
