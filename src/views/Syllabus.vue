@@ -265,9 +265,9 @@ var items: Item[] = [
   },
   {
     week: 16,
-    date: "Fri, May 5",
+    date: "Sun, May 5",
     lecture: "No class",
-    deadline: "[Due] Final project report",
+    deadline: "[Due] Final project report (strict deadline)",
   },
 ];
 
