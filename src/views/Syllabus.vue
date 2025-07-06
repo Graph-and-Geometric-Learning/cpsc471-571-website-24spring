@@ -15,13 +15,13 @@
             </tr>
           </thead>
           <tbody>
-            <tr v-for="item in items">
+            <tr v-for="item in items" :key="item.date">
               <td><b>{{ item.week }}</b></td>
               <td>{{ item.date }}</td>
               <td>
-                <p v-if="item.lecture == 'No class'"><p style="color:grey;">{{ item.lecture }}</p></p>
+                <p v-if="item.lecture == 'No class'" style="color:grey;">{{ item.lecture }}</p>
                 <p v-else>{{ item.lecture }}</p>
-                <p v-if="item.event"><p style="color: green; font-size:11pt;">{{ item.event }}</p></p>
+                <p v-if="item.event" style="color: green; font-size:11pt;">{{ item.event }}</p>
               </td>
               <td><a v-if="item.slide" :href="item.slide">[slide]</a><a v-if="item.record" :href="item.record">[record]</a></td>
               <td>{{ item.reading }}</td>
@@ -64,208 +64,155 @@ interface Item {
   new_api?: boolean;
 }
 
-enum EventType {
-  homework,
-  colab,
-}
-
 var items: Item[] = [
   {
     week: 1,
-    date: "Wed, Jan 17",
+    date: "Thu, Aug 28",
     lecture: "Introduction to Trustworthy AI",
-    slide: import.meta.env.BASE_URL + "01-intro.pdf",
   },
   {
-    week: 1,
-    date: "Fri, Jan 19",
+    week: 2,
+    date: "Tue, Sep 2",
     lecture: "Introduction to Trustworthy AI (cont.)",
-    slide: import.meta.env.BASE_URL + "01-intro.pdf",
   },
   {
     week: 2,
-    date: "Mon, Jan 22",
+    date: "Thu, Sep 4",
     lecture: "Deep Learning Basics, CNNs, and RNNs",
-    slide: import.meta.env.BASE_URL + "02-basics.pdf",
-    hw: import.meta.env.BASE_URL + "hw1.zip",
-    new_api: true,
-  },
-  {
-    week: 2,
-    date: "Wed, Jan 24",
-    lecture: "No class",
-    // slide: import.meta.env.BASE_URL + "02-basics.pdf",
-    reading: "Trustworthy Machine Learning Book – Chapter 1.1 Defining Trust - http://www.trustworthymachinelearning.com/",
-    event: "The reading assignment will be in place of Wed's class"
   },
   {
     week: 3,
-    date: "Mon, Jan 29",
+    date: "Tue, Sep 9",
     lecture: "Transformers",
-    slide: import.meta.env.BASE_URL + "03-transformers.pdf",
-    record: "https://yale.zoom.us/rec/share/YSmMakqHoY9yU0kdq1yuXjHaWyGYTpMDakk6j3zJvpQm-5bkkvj65n0B-4KgwkrA.1luDA1L7fxikpzdi?startTime=1706556830000",
-    colab: import.meta.env.BASE_URL + "colab1.zip",
-    new_api: true,
   },
   {
     week: 3,
-    date: "Web, Jan 31",
+    date: "Thu, Sep 11",
     lecture: "Explainability of Neural Networks (XAI)",
-    slide: import.meta.env.BASE_URL + "04-explainability.pdf",
-    record: "https://yale.zoom.us/rec/share/KNJmIlL31cnnnR_5fBco7DTAakXpX2EtADO5_0xQqcEAno0DS6_q08HbD2JW2M4v.SDKVhzsqh_MwYUGy?startTime=1706729674000",
-    // deadline: "[Due] Finalize project groups",
+    hw: import.meta.env.BASE_URL + "hw1_placeholder.zip",
+    new_api: true,
   },
   {
     week: 4,
-    date: "Mon, Feb 5",
+    date: "Tue, Sep 16",
     lecture: "Explainability of Neural Networks (XAI) (cont.)",
-    slide: import.meta.env.BASE_URL + "05-surrogates.pdf",
-    // deadline: "[Due] Finalize project groups",
   },
   {
     week: 4,
-    date: "Wed, Feb 7",
+    date: "Thu, Sep 18",
     lecture: "Explainability Evaluation and Global Explanability",
-    slide: import.meta.env.BASE_URL + "06-explainability_eval.pdf",
-    record: "https://yale.zoom.us/rec/share/c81nDhP_jssGtcxt2QLiRrg6xJTZ6hl8T-dgUbF7wwSq_gioeBB1K3GmCk4YoZr7.bVFwL5VAgsrzu4Fp?startTime=1707334489000"
-    // deadline: "[Due] Finalize project groups",
   },
   {
     week: 5,
-    date: "Mon, Feb 12",
+    date: "Tue, Sep 23",
     lecture: "Explainability Evaluation and Global Explanability (cont.)",
-    slide: import.meta.env.BASE_URL + "06-explainability_eval.pdf",
-    // record: "https://yale.zoom.us/rec/share/c81nDhP_jssGtcxt2QLiRrg6xJTZ6hl8T-dgUbF7wwSq_gioeBB1K3GmCk4YoZr7.bVFwL5VAgsrzu4Fp?startTime=1707334489000"
-    // deadline: "[Due] Finalize project groups",
   },
   {
     week: 5,
-    date: "Wed, Feb 14",
+    date: "Thu, Sep 25",
+    lecture: "LLM Interpretability",
+  },
+  {
+    week: 6,
+    date: "Tue, Sep 30",
     lecture: "Adversarial Attacks and Defenses",
-    slide: import.meta.env.BASE_URL + "07-adversarial_evasion.pdf",
-    record: "https://yale.zoom.us/rec/share/d5z_5030Ol3BdqNzZEt_Xf61yZ4Daq_ls4BJ6kJGELlNJe7wffNcZDTMpBSw5_QN.aHtxKILdYPR0lqyS"
-    // deadline: "[Due] Finalize project groups",
+    deadline: "[Due] hw1",
   },
   {
     week: 6,
-    date: "Mon, Feb 19",
+    date: "Thu, Oct 2",
     lecture: "In-class project discussions",
-    slide: import.meta.env.BASE_URL + "in-class-brainstorming.pdf",
-  },
-  {
-    week: 6,
-    date: "Wed, Feb 21",
-    lecture: "Adversarial Attacks and Defenses (cont.)",
-    slide: import.meta.env.BASE_URL + "08-defense_poison.pdf",
-    deadline: "[Due] Written homework 1",
-  },
-  {
-    week: 7,
-    date: "Mon, Feb 26",
-    lecture: "Adversarial Attacks and Defenses (cont.)",
-    slide: import.meta.env.BASE_URL + "08-defense_poison.pdf",
-    record: "https://yale.zoom.us/rec/share/46z4jI-sRHhCJ_EnuR3Y0zhREaKS-P0gKbUMSqH6fTUF-PEdatdO5fckyPziLm90.hDrvebMpdESsxzMv",
-    deadline: "[Due] Programming homework 1",
-  },
-  {
-    week: 7,
-    date: "Mon, Feb 26",
-    lecture: "Adversarial Attacks and Defenses (cont.)",
-    slide: import.meta.env.BASE_URL + "08-defense_poison.pdf",
-    deadline: "[Due] Programming homework 1",
-  },
-  {
-    week: 7,
-    date: "Wed, Feb 28",
-    lecture: "Verification and Robust Reinforecement Learning",
-    slide: import.meta.env.BASE_URL + "09-verification.pdf",
-    colab: import.meta.env.BASE_URL + "colab2.zip",
+    hw: import.meta.env.BASE_URL + "hw2_placeholder.zip",
     new_api: true,
   },
   {
     week: 7,
-    date: "Fri, March 1",
-    deadline: "[Due] Project proposal",
+    date: "Tue, Oct 7",
+    lecture: "Adversarial Attacks and Defenses (cont.)",
+  },
+  {
+    week: 7,
+    date: "Thu, Oct 9",
+    lecture: "Adversarial Attacks and Defenses (cont.)",
+  },
+  {
+    week: 7,
+    date: "Fri, Oct 10",
     lecture: "No class",
+    deadline: "[Due] Project proposal",
   },
   {
     week: 8,
-    date: "Mon, March 4",
+    date: "Tue, Oct 14",
+    lecture: "Verification and Robust Reinforecement Learning",
+  },
+  {
+    week: 9,
+    date: "Tue, Oct 21",
+    lecture: "LLM Adversarial Robustness",
+  },
+  {
+    week: 9,
+    date: "Thu, Oct 23",
     lecture: "In-class work session",
-    slide: import.meta.env.BASE_URL + "in-class-programming.pdf",
+    deadline: "[Due] hw2",
   },
   {
-    week: 8,
-    date: "Web, March 6",
+    week: 10,
+    date: "Tue, Oct 28",
     lecture: "Guest lecture (Zoom)",
-    hw: import.meta.env.BASE_URL + "hw2.zip",
+    hw: import.meta.env.BASE_URL + "hw3_placeholder.zip",
     new_api: true,
   },
   {
-    week: 11,
-    date: "Mon, March 25",
+    week: 10,
+    date: "Thu, Oct 30",
     lecture: "Differential Privacy",
-    slide: import.meta.env.BASE_URL + "10-privacy.pdf",
   },
   {
     week: 11,
-    date: "Wed, March 27",
+    date: "Tue, Nov 4",
     lecture: "Differential Privacy (cont.)",
-    slide: import.meta.env.BASE_URL + "10-privacy.pdf",
   },
   {
-    week: 12,
-    date: "Mon, April 1",
-    lecture: "(Guest Lecture) Differential Privacy",
-    slide: import.meta.env.BASE_URL + "11-gautam_DP.pdf",
-  },
-  {
-    week: 12,
-    date: "Wed, April 3",
+    week: 11,
+    date: "Thu, Nov 6",
     lecture: "Machine Unlearning",
-    record: "https://yale.zoom.us/rec/share/8uVvj8vuaGAg7LCB46-lEABN6wvux7mbj-XlLW04YKyjcRe-WKoJMc3F5F5vGH4C.1KVF0ilZ0_b-um3k",
-    slide: import.meta.env.BASE_URL + "12-Unlearning.pdf",
-    deadline: "[Due] Programming Homework 2",
-    new_api: true,
   },
   {
-    week: 13,
-    date: "Mon, April 8",
+    week: 12,
+    date: "Tue, Nov 11",
     lecture: "Federated Learning",
-    slide: import.meta.env.BASE_URL + "13-federated_learning.pdf",
+  },
+  {
+    week: 12,
+    date: "Thu, Nov 13",
+    lecture: "Quantization",
   },
   {
     week: 13,
-    date: "Wed, April 10",
-    deadline: "[Due] Written Homework 2",
-    record: "https://yale.zoom.us/rec/share/DtaHGPysK74sMsEGpXc5Wyyq3kO8f-mErA6Pv9aUV3Hg41zuPDY01NzaSYowVsi7.3EDunwlmIaBvp9Kr",
-    lecture: "Quantization",
-    slide: import.meta.env.BASE_URL + "14-quantization.pdf",
+    date: "Tue, Nov 18",
+    lecture: "Algorithmic Fairness in ML",
   },
   {
-    week: 14,
-    date: "Mon, April 15",
-    record: "https://yale.zoom.us/rec/share/QqLRmAJtCLU2I96hvPf8eaOGl0pWBVwcLfK2Z5954iKKrbmHYvxpAR8EGF-Ms5vF.Pk-trU5TZda3lRdG",
+    week: 13,
+    date: "Thu, Nov 20",
     lecture: "Algorithmic Fairness in ML",
-    slide: import.meta.env.BASE_URL + "15-fairness.pdf",
-    hw: import.meta.env.BASE_URL + "example_final.zip",
-    new_api: true,
+    deadline: "[Due] hw3",
   },
   {
     week: 15,
-    date: "Wed, April 17",
-    record: "https://yale.zoom.us/rec/share/5jGH7qG_vT90Mr7pTLbXR8mQkDjCbF9JOfEadCW-qsZJc9SYnSCxMNAKzv2TdDX0.BhWXC3cQzoatZb6T",
-    lecture: "Algorithmic Fairness in ML",
-    slide: import.meta.env.BASE_URL + "15-fairness.pdf",
+    date: "Tue, Dec 2",
+    lecture: "",
   },
   {
     week: 15,
-    date: "Wed, April 24",
+    date: "Thu, Dec 4",
     lecture: "Exam",
   },
   {
     week: 16,
-    date: "Sun, May 5",
+    date: "Mon, Dec 15",
     lecture: "No class",
     deadline: "[Due] Final project report (strict deadline)",
   },

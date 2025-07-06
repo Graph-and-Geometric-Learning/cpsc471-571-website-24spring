@@ -5,7 +5,7 @@
                 <v-sheet class="pa-8" elevation="6">
                     <h1>Welcom to CPSC 471/571!</h1>
                     <ul>
-                        <li>The classes meets on Monday/Wednesday 2:30PM - 3:45PM EDT, 17 Hillhouse, Room 5.
+                        <li>The classes meets on Tuesday/Thursday 4PM-5:15PM ET, [LOCATION TBA].
                           <ul>
                             <li>Most of the lecture will be in-person.</li>
                             <li>There will be a few guest lectures, some of which might be held remotely.</li>
@@ -93,7 +93,7 @@
                     <h2>Mailing List</h2>
                     <ul>
                         <li>Teaching staff: <a
-                                href="mailto:cpsc471_staff@googlegroups.com">cpsc471_staff@googlegroups.com</a></li>
+                                href="mailto:">[EMAIL TBA]</a></li>
                         <ul>
                           <li>Send email to the mailing list if you have requests or questions (not individual instructor / TA).</li>
                           <li>Only email the instructor if the message is highly private / not related to teaching in general.</li>
